@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Zapremina valjka</title>
+    </head>
+    <body style="background-color: aquamarine;">
+        
+        <table border="1"  class="tabla" style="margin-top: 250px; margin-right: auto; margin-bottom: 250px; margin-left: auto; background-color: lightblue; border-radius: 7px;">
+         <tr>
+            <th colspan="2">Izracunati zapreminu valjka</th>
+         </tr>
+         <tr>
+            <td><b>Poluprecnik osnove valjka r:
+                 <script>
+                 var r =  prompt("Unesite veličinu poluprečnika:");
+                </script> 
+            </b></td>
+            <td style="text-align: center;">
+                <script>
+                document.write(r);
+                </script>
+            </td>
+         </tr>
+         <td style="text-align: center;"><b>Visina H:
+             <script>
+            var H = prompt("Unesite visinu:")
+             </script>
+             </b></td>
+         <td style="text-align: center;">
+            <script>
+            document.write(H);
+            </script>
+        </td>
+         <tr>
+            <td style="text-align: center;"><b>Pi:
+                <script> 
+                const Pi = 3.14;
+                </script>
+            </b></td>
+            <td style="text-align: center;">
+                <script>
+                    document.write(Pi);
+                </script>
+            </td>
+         </tr>
+         <tr>
+            <td style="text-align: center;"><b>Zapremina valjka:</b></td>
+            <td style="text-align: center;">
+                <script>
+                    var kvadratPoluPrecnika = r * r;
+                    var Zapremina = kvadratPoluPrecnika * Pi * H;
+                     document.write(Zapremina)
+                </script>
+            </td>
+         </tr>
+        </table>
+    </body>
+</html>
